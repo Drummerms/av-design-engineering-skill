@@ -408,3 +408,56 @@ Esports facilities in Higher Education support competitive gaming programs, comb
 │                                                                                 │
 └─────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+### Gaming Station Standards
+
+Each competitive gaming station requires dedicated AV infrastructure for both player experience and broadcast capture.
+
+#### Per-Station Requirements
+
+| Component | Specification | Purpose |
+|-----------|---------------|---------|
+| Gaming PC | RTX 4070+, 32GB RAM, NVMe | Competitive gaming performance |
+| Gaming Monitor | 24-27" 1080p 144Hz+ minimum | Low latency display |
+| Headset | USB or 3.5mm with mic | Player communication and game audio |
+| Keyboard/Mouse | Tournament-grade peripherals | Player input devices |
+| Network | 1Gbps dedicated port, Gaming VLAN | Low-latency game traffic |
+| Video Capture | NDI encoder or SDI output | Broadcast feed of gameplay |
+| Facecam (optional) | USB webcam or PTZ | Player camera for broadcast |
+
+#### Video Capture Options
+
+| Method | Latency | Quality | Cost | Notes |
+|--------|---------|---------|------|-------|
+| NDI (software) | 2-5 frames | 1080p60 | Low | Requires CPU overhead on gaming PC |
+| NDI (hardware) | 1-2 frames | 4K60 | Medium | Magewell EcoCapture, AVerMedia |
+| SDI (capture card) | < 1 frame | 1080p60 | High | Blackmagic DeckLink, lowest latency |
+| HDMI Direct | 0 frames | 4K60 | Low | No capture, display only |
+
+**Recommended:** Hardware NDI encoder (Magewell EcoCapture) for balance of latency, quality, and cost.
+
+#### Team Row Configuration
+
+Standard esports team format is 5v5. Configure gaming stations in rows or pods:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  TEAM A ROW (5 Stations)                                        │
+│  ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐     ┌────┐                │
+│  │ P1 │ │ P2 │ │ P3 │ │ P4 │ │ P5 │     │Coach│                │
+│  └────┘ └────┘ └────┘ └────┘ └────┘     └────┘                │
+│    │      │      │      │      │          │                    │
+│    └──────┴──────┴──────┴──────┴──────────┘                    │
+│                     │                                           │
+│              Local Switch (Gaming VLAN)                         │
+│                     │                                           │
+└─────────────────────┼───────────────────────────────────────────┘
+                      │
+              Core Switch → Gaming Network
+```
+
+**Row Infrastructure:**
+- Local 8-port switch per row (reduces cable runs)
+- Cable management trough or under-desk routing
+- Dedicated circuit per 10 stations (15A per circuit)
+- Coach position at row end with overview monitor
