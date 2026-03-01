@@ -343,3 +343,68 @@ Summary:
 - Wireless microphone system (4+ channels)
 
 **Rack Size:** Dual 44RU racks
+
+## Esports Facility Architecture
+
+Esports facilities in Higher Education support competitive gaming programs, combining professional broadcast production with gaming-optimized infrastructure. Unlike traditional AV spaces, esports requires ultra-low latency signal paths, dedicated gaming networks, and broadcast-quality production for streaming.
+
+### Core Principles
+
+1. **Low Latency:** All video/audio paths optimized for sub-frame delay (< 16ms)
+2. **Broadcast Quality:** 1080p60 minimum, 4K capability for main displays
+3. **Network Segregation:** Gaming traffic isolated from broadcast and management
+4. **Platform Agnostic:** NDI/SDI infrastructure with encoding at final stage
+5. **Scalability:** Patterns scale from 5-station studio to 40-station arena
+
+### Facility Zones
+
+| Zone | Function | Key Equipment |
+|------|----------|---------------|
+| Gaming Arena | Competitive play area | Gaming stations, player monitors, network switches |
+| Broadcast Control | Production and streaming | Switcher, audio mixer, encoders, intercom |
+| Spectator Area | Audience seating and viewing | Video wall, PA system, secondary displays |
+| Shoutcaster Desk | Live commentary | Commentary positions, program monitors, talkback |
+
+### Signal Flow Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                         ESPORTS FACILITY SIGNAL FLOW                             │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  GAMING ARENA                           BROADCAST CONTROL                        │
+│  ┌──────────────┐                      ┌─────────────────────────────────────┐  │
+│  │   Gaming     │    NDI/SDI           │                                     │  │
+│  │   Station 1  │─────────────────────▶│   Production Switcher               │  │
+│  │   (PC+Game)  │                      │   (Blackmagic ATEM / vMix)          │  │
+│  ├──────────────┤                      │                                     │  │
+│  │   Gaming     │                      │   ┌─────────┐    ┌──────────────┐   │  │
+│  │   Station 2  │──────────┐           │   │ Graphics│    │   Stream     │   │  │
+│  ├──────────────┤          │           │   │   PC    │───▶│   Encoders   │───┼──▶ Twitch/YouTube
+│  │     ...      │          │           │   └─────────┘    └──────────────┘   │  │
+│  ├──────────────┤          │           │                                     │  │
+│  │   Gaming     │          │           │   ┌─────────┐    ┌──────────────┐   │  │
+│  │   Station N  │──────────┴──────────▶│   │  Audio  │    │   Recording  │   │  │
+│  └──────────────┘    Video Capture     │   │  Mixer  │───▶│   (HyperDeck)│   │  │
+│                                        │   └─────────┘    └──────────────┘   │  │
+│  ┌──────────────┐                      │         ▲                          │  │
+│  │   Shoutcaster│─────────────────────────────────┘                          │  │
+│  │     Desk     │                      └─────────────────────────────────────┘  │
+│  │   (2-4 pos)  │                                    │                          │
+│  └──────────────┘                                    ▼                          │
+│                                        ┌─────────────────────────────────────┐  │
+│  SPECTATOR AREA                        │                                     │  │
+│  ┌──────────────┐                      │   Main Video Wall                   │  │
+│  │   Secondary  │◀─────────────────────│   (2x2 or 3x2 55" displays)         │  │
+│  │   Displays   │                      │                                     │  │
+│  └──────────────┘                      └─────────────────────────────────────┘  │
+│                                                                                 │
+│  NETWORK ARCHITECTURE (Three VLANs)                                            │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                │
+│  │  Gaming VLAN    │  │ Broadcast VLAN  │  │ Management VLAN │                │
+│  │  (10.x.x.x)     │  │  (172.x.x.x)    │  │  (192.x.x.x)    │                │
+│  │  QoS Priority   │  │  NDI Optimized  │  │  Control/HTTP   │                │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘                │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
