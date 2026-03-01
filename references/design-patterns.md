@@ -643,3 +643,82 @@ Esports lighting serves broadcast, player, and spectator needs:
 - CRI 90+ for accurate color on camera
 - Avoid flicker (high-frequency ballasts or LED)
 - Control via DMX from control room
+
+### Esports Facility Room Sizes
+
+#### Small Esports Studio (5-10 stations)
+
+**Use Case:** Practice facility, small competitions, content creation
+
+**Equipment Summary:**
+- 5-10 gaming stations with NDI capture
+- 1x 75" main display or 2x2 video wall
+- 2x Shure MXA920 ceiling microphones
+- 1x QSC PTZ 20 camera
+- vMix or OBS production (software)
+- Single 44RU rack
+
+**Rack Size:** Single 44RU floor rack or wall rack
+
+**Spectator Capacity:** 0-30 (standing or limited seating)
+
+**Network:**
+- 1x Netgear M4250-26G4XF-PoE+ (Gaming VLAN)
+- 1x Netgear M4250-10G2XF-PoE+ (Broadcast VLAN)
+
+---
+
+#### Competition Arena (10-20 stations)
+
+**Use Case:** Varsity home matches, medium competitions, dual broadcasts
+
+**Equipment Summary:**
+- 10-20 gaming stations (2 team rows of 5-10)
+- 1x 2x2 video wall (main) + 4x 65" auxiliary displays
+- 3-4x Shure MXA920 ceiling microphones
+- 2x QSC PTZ 20 cameras (audience + gameplay overview)
+- 1x Blackmagic ATEM Constellation 8K
+- 1x Behringer X32 or QSC Core 510i
+- 2x 44RU racks (gaming + broadcast)
+
+**Rack Size:** Dual 44RU floor racks
+
+**Spectator Capacity:** 50-150 seats
+
+**Network:**
+- 2x Netgear M4250-26G4XF-PoE+ (Gaming VLAN per team)
+- 1x Netgear M4250-10G2XF-PoE+ (Broadcast VLAN)
+- 1x Netgear M4300-8X8F (Fiber backbone to control room)
+
+**Control Room:** Optional but recommended (separate room or corner enclosure)
+
+---
+
+#### Large Esports Arena (20-40 stations)
+
+**Use Case:** Major tournaments, conference championships, multi-game events
+
+**Equipment Summary:**
+- 20-40 gaming stations (4+ team rows)
+- 1x 3x2 video wall (main) + 8+ auxiliary displays
+- 6-8x Shure MXA920 ceiling microphones
+- 4x QSC PTZ 20 cameras (multiple angles)
+- 1x Blackmagic ATEM Constellation 8K or TriCaster
+- 1x Behringer X32 (broadcast) + 1x QSC Core 510i (room)
+- Dedicated control room with 4+ racks
+
+**Rack Size:** Dedicated control room (8+ racks total)
+
+**Spectator Capacity:** 150-500 seats
+
+**Network:**
+- Dedicated AV network infrastructure
+- Fiber backbone between zones
+- Redundant core switches
+
+**Control Room:** Required (separate room, minimum 200 sq ft)
+
+**Additional Infrastructure:**
+- Dedicated electrical service (200A+)
+- HVAC zones for gaming area and control room
+- Broadcast-quality lighting grid
