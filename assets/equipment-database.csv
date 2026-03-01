@@ -62,3 +62,22 @@ Infrastructure & Rack,QSC,CXD4.5Q,4-channel 500W amplifier with Dante,Dante,Anal
 Audio,QSC,AD-C6T-LP,6.5 ceiling speaker with transformer,Analog Speaker,N/A,0,0,70V/100V transformer
 Audio,QSC,AD-C8T-LP,8 ceiling speaker with transformer,Analog Speaker,N/A,0,0,70V/100V transformer
 Audio,QSC,AD-C4T-LP,4.5 ceiling speaker with transformer,Analog Speaker,N/A,0,0,70V/100V transformer for smaller spaces
+Processing & Control,Blackmagic,ATEM Constellation 8K,40-input M/E production switcher,SDI,HDMI,NDI,AC Mains,400,4,Broadcast production switcher for large esports arenas
+Processing & Control,Blackmagic,ATEM Mini Extreme ISO,8-input HDMI switcher with recording,HDMI,USB-C,AC Mains,35,1,Compact switcher for small esports studios
+Processing & Control,vMix,vMix HD,Software production switcher,NDI,HDMI,USB,N/A,0,0,PC-based software switcher for budget productions
+Processing & Control,TriCaster,TC2 Elite,32-input NDI production system,NDI,SDI,AC Mains,500,4,Enterprise-grade production for multi-venue esports
+Processing & Control,Magewell,EcoCapture Dual HDMI,Dual NDI encoder card,HDMI,NDI,PCIe,15,0,Low-latency NDI capture for gaming PCs
+Processing & Control,AVerMedia,Live Gamer 4K 2.1,HDMI 2.1 capture card,HDMI,USB 3.0,PCIe,10,0,4K120 capture for next-gen gaming
+Video,ASUS,ROG Swift PG27AQN,27 1440p 360Hz gaming monitor,DisplayPort,HDMI,AC Mains,50,0,Tournament-grade esports monitor
+Video,BenQ,Zowie XL2566K,24.5 1080p 360Hz gaming monitor,DisplayPort,HDMI,AC Mains,45,0,Professional esports tournament monitor
+Video,LG,UltraGear 27GP950-B,27 4K 144Hz gaming monitor,HDMI,DisplayPort,USB,AC Mains,40,0,High-resolution gaming display
+Infrastructure & Rack,Teradek,Prism,Multi-platform H.265 encoder,SDI,HDMI,NDI,AC Mains,25,1,Hardware streaming encoder
+Infrastructure & Rack,Makito,X Encoder,Quad 4K60 streaming encoder,SDI,HDMI,NDI,AC Mains,75,1,Enterprise broadcast encoder
+Infrastructure & Rack,Blackmagic,HyperDeck Studio 4K Pro,Broadcast recorder with H.265,SDI,HDMI,AC Mains,35,2,Production recording and backup
+Infrastructure & Rack,Clear-Com,MS-702,Two-channel intercom main station,Analog,XLR,AC Mains,40,2,Production intercom system
+Infrastructure & Rack,Clear-Com,RS-701,Single-channel beltpack intercom,Analog,XLR,DC Power,5,0,Shoutcaster beltpack
+Infrastructure & Rack,Riedel,Bolero SW,Wireless intercom beltpack,DECT,Dante,DC Power,8,0,Wireless production intercom
+Audio,Shure,SM7B,Broadcast dynamic microphone,Analog XLR,Phantom,0,0,Industry-standard broadcast mic for shoutcasters
+Audio,Rode,PodMic,Broadcast dynamic microphone,Analog XLR,Phantom,0,0,Budget broadcast microphone
+Audio,Audio-Technica,BP40,Broadcast dynamic microphone,Analog XLR,Phantom,0,0,Professional broadcast microphone
+Infrastructure & Rack,Behringer,X32,32-channel digital mixer,Dante,Analog XLR,USB,AC Mains,120,4,Broadcast audio mixer
