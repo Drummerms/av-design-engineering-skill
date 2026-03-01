@@ -461,3 +461,84 @@ Standard esports team format is 5v5. Configure gaming stations in rows or pods:
 - Cable management trough or under-desk routing
 - Dedicated circuit per 10 stations (15A per circuit)
 - Coach position at row end with overview monitor
+
+### Broadcast/Streaming Production
+
+Professional esports production requires broadcast-quality infrastructure with multi-destination streaming capability.
+
+#### Production Switcher Hierarchy
+
+| Tier | Equipment | Inputs | Outputs | Use Case |
+|------|-----------|--------|---------|----------|
+| Entry | OBS/vMix (software) | Unlimited NDI | Multi-stream | Small studio, budget |
+| Mid | Blackmagic ATEM Mini Extreme ISO | 8 HDMI + 4 NDI | 4 + recording | Competition arena |
+| Pro | Blackmagic ATEM Constellation 8K | 40 M/E | 24 + multi-view | Large arena, broadcast |
+| Enterprise | Newtek TriCaster TC2 Elite | 32 NDI + 16 SDI | Unlimited | Multi-venue production |
+
+**Recommended for Higher Education:** Blackmagic ATEM Constellation for competitive arena, vMix for smaller studios.
+
+#### Shoutcaster/Commentary Positions
+
+Standard commentary desk configuration:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  SHOUTCASTER DESK (2-4 Positions)                               │
+│                                                                 │
+│  ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐      │
+│  │  SC 1   │    │  SC 2   │    │  SC 3   │    │  SC 4   │      │
+│  │ Monitor │    │ Monitor │    │ Monitor │    │ Monitor │      │
+│  │ Headset │    │ Headset │    │ Headset │    │ Headset │      │
+│  │   Mic   │    │   Mic   │    │   Mic   │    │   Mic   │      │
+│  └─────────┘    └─────────┘    └─────────┘    └─────────┘      │
+│       │              │              │              │            │
+│       └──────────────┴──────────────┴──────────────┘            │
+│                          │                                      │
+│                   Audio Mixer                                   │
+│                   (Behringer X32 or similar)                    │
+│                          │                                      │
+│              ┌───────────┴───────────┐                         │
+│              ▼                       ▼                          │
+│         Broadcast Mix           Intercom/Talkback              │
+│         (to switcher)           (to control room)              │
+│                                                                 │
+│  Each position requires:                                        │
+│  - Program monitor (game feed + graphics)                       │
+│  - Preview monitor (next scene/camera)                          │
+│  - Headset with mic (commentary audio)                          │
+│  - Talkback button (communicate with control room)              │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+#### Multi-Destination Streaming Architecture
+
+Platform-agnostic streaming uses NDI/SDI infrastructure with encoding at the final stage:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  STREAMING ARCHITECTURE (Platform Agnostic)                     │
+│                                                                 │
+│  Production Switcher                                            │
+│         │                                                       │
+│         ▼                                                       │
+│  ┌─────────────────┐                                            │
+│  │   Master Out    │                                            │
+│  │   (NDI/SDI)     │                                            │
+│  └────────┬────────┘                                            │
+│           │                                                     │
+│           ├─────────────────┬─────────────────┬────────────┐   │
+│           ▼                 ▼                 ▼            ▼   │
+│  ┌────────────┐    ┌────────────┐    ┌────────────┐ ┌─────────┐│
+│  │ Encoder 1  │    │ Encoder 2  │    │ Encoder 3  │ │Recording││
+│  │ (Twitch)   │    │ (YouTube)  │    │ (Facebook) │ │(HyperDeck││
+│  │ Teradek    │    │ Makito X   │    │ OBS/FFmpeg │ │ or SSD) ││
+│  └────────────┘    └────────────┘    └────────────┘ └─────────┘│
+│                                                                 │
+│  Encoder Options:                                               │
+│  - Hardware: Teradek Prism, Makito X, AWS Elemental             │
+│  - Software: OBS, vMix, FFmpeg                                  │
+│  - Cloud: AWS IVS, Mux, Vimeo Enterprise                        │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
