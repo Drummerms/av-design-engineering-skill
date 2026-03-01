@@ -1,0 +1,34 @@
+signal_type,level,connector,max_distance,requires,compatible_with,bridge_required
+Microphone Audio,1-10 mV,XLR,300ft,Preamp or Phantom Power (48V),Professional Audio,Mic Preamp
+Consumer Audio,-10 dBV,RCA/3.5mm TRS,15ft,None,Consumer Audio,Consumer to Pro Converter
+Professional Audio,+4 dBu,XLR/TRS,1000ft,None,Professional Audio,None (direct)
+Dante,Digital/IP,RJ-45,100m,Gigabit Switch & QoS,Dante,Dante-to-Analog Bridge (AVIO)
+AVB,Digital/IP,RJ-45,100m,AVB-capable Switch,AVB,AVB-to-Dante Bridge
+HDMI 2.0,18 Gbps,HDMI Type A,15ft (passive),HDCP 2.2,HDMI,HDBaseT Extender for long runs
+HDMI 2.1,48 Gbps,HDMI Type A,10ft (passive),HDCP 2.3,HDMI,HDBaseT Extender for long runs
+HDBaseT,10.2 Gbps,RJ-45 (CAT6A),100m,None,HDBaseT Receiver/HDMI,None (native extension)
+DisplayPort 1.4,32.4 Gbps,DP/Mini-DP,10ft (passive),None,DisplayPort,HDMI Active Adapter
+DisplayPort 2.0,80 Gbps,DP/Mini-DP,6ft (passive),None,DisplayPort,HDMI Active Adapter
+SDI,270 Mbps-12 Gbps,BNC,300ft,None,SDI,SDI-to-HDMI Converter
+VGA,Analog,HD-15,50ft,None,VGA,VGA-to-HDMI Scaler
+RS-232,Serial/DB-9,DB-9,50ft,None,RS-232,RS-232 to TCP/IP Converter
+TCP/IP,Ethernet,RJ-45,100m,Gigabit Switch,TCP/IP,None (network)
+PoE (802.3af),15.4W DC,RJ-45,100m,PoE Switch/Injector,PoE,None (integrated)
+PoE+ (802.3at),30W DC,RJ-45,100m,PoE+ Switch/Injector,PoE+,None (integrated)
+PoE++ (802.3bt),60-90W DC,RJ-45,100m,PoE++ Switch/Injector,PoE++,None (integrated)
+Relay Control,Dry Contact,Terminal Block,500ft,None,Relay Control,None (direct)
+GPIO,Logic Level,Terminal Block/DB-25,100ft,None,GPIO,None (direct)
+IR,Infrared,IR Emitter/Receiver,30ft,None,IR,IR-to-TCP/IP Gateway
+CEC,HDMI CEC,HDMI Cable,15ft,HDMI Connection,CEC,None (HDMI embedded)
+AC Mains,120V/60Hz,NEMA 5-15R,Unlimited,None,AC Mains,None (power distribution)
+AC Mains 20A,120V/60Hz,NEMA 5-20R,Unlimited,None,AC Mains 20A,None (power distribution)
+DC 5V,5V DC,Barrel Connector,10ft,DC Power Supply,DC 5V,None (direct)
+DC 12V,12V DC,Barrel Connector,15ft,DC Power Supply,DC 12V,None (direct)
+DC 24V,24V DC,Barrel/Terminal,25ft,DC Power Supply,DC 24V,None (direct)
+Phantom Power,48V DC,XLR (Pin 2/3),300ft,Phantom Power Supply,Phantom Power,None (XLR embedded)
+Analog Speaker,70V/100V Line,Terminal Block,500ft,Amplifier,Analog Speaker,None (direct)
+Analog Speaker Low Z,4-8 Ohm,Terminal Block,100ft,Amplifier,Analog Speaker Low Z,None (direct)
+USB 2.0,480 Mbps,USB Type-A/B,16ft (passive),None,USB 2.0,USB Extender for long runs
+USB 3.0,5 Gbps,USB Type-A/Micro-B,10ft (passive),None,USB 3.0,USB Extender for long runs
+USB 3.1,10 Gbps,USB Type-C,10ft (passive),None,USB 3.1,USB Extender for long runs
+USB-C,Up to 40 Gbps,USB Type-C,3ft (passive),None,USB-C,Active cable for longer runs

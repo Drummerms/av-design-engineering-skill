@@ -1,0 +1,32 @@
+standard,category,checkpoint,applies_to,validation_question
+CTS-D,Design,Display height should be 1/6 the distance to the furthest viewer,All rooms with displays,"Is the bottom of the display at least 48"" from floor, and height appropriate for viewing distance?"
+CTS-D,Design,Minimum viewing distance should not exceed 8x the display height for 1080p,All rooms with displays,Is the furthest viewer within 8x display height for HD content?
+CTS-D,Design,Minimum viewing distance should not exceed 4x the display height for 4K,All rooms with displays,Is the furthest viewer within 4x display height for 4K content?
+CTS-D,Design,Microphone pickup pattern must match room geometry,All rooms with audio,Does the microphone coverage pattern match the talk zone?
+CTS-D,Design,Sound reinforcement should achieve NC-30 or better for lecture halls,Lecture halls/Auditoriums,Is the ambient noise level NC-30 or below?
+CTS-D,Design,Sound reinforcement should achieve NC-35 or better for classrooms,Classrooms,Is the ambient noise level NC-35 or below?
+CTS-D,Design,Cable pathway capacity should be 40% fill maximum,All installations,Is the cable pathway filled to no more than 40% capacity?
+CTS-D,Design,Sight lines must be unobstructed for all viewers,All rooms,Does every seat have a clear view of the primary display/projection?
+CTS-D,Design,Projector throw ratio must accommodate room depth,Rooms with projection,Is the projector throw ratio appropriate for the screen size and distance?
+CTS-D,Design,Concurrent interpreter booths require dedicated audio feeds,Auditoriums,Are interpreter booth positions and feeds planned if needed?
+CTS-I,Installation,Rack thermal management requires 1RU blank space above heat-generating equipment,All rack installations,Is there a 1RU blank above each processor/amplifier?
+CTS-I,Installation,All metal racks must be grounded to building ground,All rack installations,Is the rack bonded to the building ground system?
+CTS-I,Installation,Cable labeling must identify both ends and be machine-printed,All installations,Are all cables labeled at both ends with consistent naming?
+CTS-I,Installation,Service loops must be provided at each device termination,All installations,Is there a 6-12"" service loop at each cable termination?"
+CTS-I,Installation,Power sequencing must prevent transients during startup/shutdown,All installations with multiple amps,Is there a power sequencer or delayed startup for amplifiers?
+CTS-I,Installation,Structured cabling must follow TIA-568 standards,All network installations,Are all network cables terminated to TIA-568B standard?
+CTS-I,Installation,Fiber optic cables must have minimum bend radius of 10x cable diameter,All fiber installations,Are fiber bend radius requirements maintained throughout?
+CTS-I,Installation,Dress covers must be installed on all rack cable entries,All rack installations,Are cable entry points covered with brush strips or grommets?
+AVIXA,Performance,Speech intelligibility STI should be 0.6 or higher,All rooms with speech reinforcement,Is the STI measurement 0.6 or above?
+AVIXA,Performance,Sound pressure level should be 70-75 dBA for normal speech,Lecture halls,Is the SPL at the listener position 70-75 dBA?
+AVIXA,Performance,Video display brightness should be 350 cd/m2 minimum for controlled lighting,All rooms with displays,Is the display brightness at least 350 cd/m2?
+AVIXA,Performance,Video display contrast ratio should be 4000:1 minimum,All rooms with displays,Is the display contrast ratio at least 4000:1?
+AVIXA,Performance,Projector brightness should be calculated based on screen size and ambient light,Rooms with projection,Is projector brightness appropriate for screen gain and ambient light?
+AVIXA,Design,Viewing angle should not exceed 45 degrees from center for primary display,All rooms with displays,Are all viewers within 45 degrees of display center?
+AVIXA,Design,Acoustical treatment should address first reflection points,All rooms with audio,Are first reflection points treated with absorption?
+CTS-D,Design,Dante network requires dedicated VLAN with QoS enabled,Dante installations,Is Dante on a dedicated VLAN with DSCP QoS?
+CTS-D,Design,Gigabit network infrastructure required for Dante,Dante installations,Are all Dante network components gigabit capable?
+CTS-D,Design,PoE power budget must exceed total device draw by 25%,PoE installations,Is the PoE switch budget at least 125% of total device draw?
+CTS-D,Design,Emergency evacuation audio must override all other audio sources,Large venues,Is the emergency audio system integrated with override capability?
+CTS-I,Installation,Wall-mounted displays require safety tethering,All wall-mounted displays,Is the display secured with a safety tether?
+CTS-I,Installation,Ceiling-mounted projectors require safety cable,All ceiling-mounted projectors,Is the projector secured with a safety cable?

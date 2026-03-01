@@ -1,0 +1,64 @@
+category,manufacturer,model,description,inputs,outputs,power_type,power_watts,rack_units,notes
+Processing & Control,QSC,Q-SYS Core 110f,DSP and control processor with USB bridging,Dante,Analog XLR,USB,GPIO,RS-232,AC Mains,65,1,Native AEC and USB audio bridging for soft codec
+Processing & Control,QSC,Q-SYS Core 510i,DSP and control processor with USB bridging,Dante,Analog XLR,USB,GPIO,RS-232,AC Mains,100,1,Higher I/O count for large venues
+Processing & Control,Crestron,CP4N,Control processor with NVX support,TCP/IP,RS-232,IR,Relay,GPIO,PoE+,25,1,Crestron ecosystem control core
+Processing & Control,Crestron,DM-NVX-D30,4K60 HDR network AV decoder,TCP/IP,HDBaseT,HDMI,AC Mains,35,1,NVX series encoder/decoder
+Processing & Control,Crestron,DM-NVX-E30,4K60 HDR network AV encoder,HDMI,DisplayPort,TCP/IP,AC Mains,35,1,NVX series encoder/decoder
+Processing & Control,Extron,IN1808,8-input HDCP scaler and switcher,HDMI,DisplayPort,VGA,HDMI,TCP/IP,RS-232,AC Mains,40,1,Popular scaler for presentation systems
+Processing & Control,Extron,DMP 64,Digital matrix processor with AEC,Dante,Analog XLR,USB,GPIO,TCP/IP,AC Mains,45,1,Budget-friendly DSP option
+Audio,Shure,MXA920,-ceiling array microphone with Dante,Dante,PoE+,12,0,Requires 802.3at PoE+; covers up to 3000 sq ft
+Audio,Shure,MXA710-2,2-foot linear array microphone with Dante,Dante,PoE+,7,0,Linear array for table or wall mount
+Audio,Shure,MX396,microphone with LED and mute button,Analog XLR,Phantom,2,0,Requires DSP with AEC
+Audio,Shure,ULXD4Q,G4 wireless receiver quad channel,RF,Analog XLR,Dante,AC Mains,40,1,Dual and quad channel options
+Audio,Shure,ULXD2,Handheld wireless transmitter with SM58 capsule,RF,Battery,0.5,0,Part of ULXD system
+Audio,Shure,ULXD1,Bodypack wireless transmitter,RF,Battery,0.5,0,Part of ULXD system
+Audio,Sennheiser,EW-DX,EM 4 Dante receiver,RF,Dante,Analog XLR,AC Mains,35,1,Next-gen digital wireless
+Audio,Sennheiser,EW-DX,SKM handheld transmitter,RF,Battery,0.5,0,Part of EW-DX system
+Audio,Sennheiser,TeamConnect Ceiling 2,mic with automatic beamforming,Dante,PoE+,15,0,Beamforming with TruVoiceLift
+Audio,Biamp,Parlé TCM-XA,ceiling microphone with beamtracking,Dante,PoE+,10,0,Requires TesiraFORTE DSP
+Audio,Biamp,TesiraFORTE AI,DSP with AEC and Dante,Dante,Analog XLR,USB,GPIO,AC Mains,50,1,Biamp ecosystem DSP
+Audio,Biamp,TesiraFORTE DAN,DSP with AEC and Dante,Dante,Analog XLR,USB,AC Mains,50,1,All-Dante I/O version
+Video,QSC,PTZ 12,PTZ camera with 12x zoom and USB/HDMI,USB,HDMI,Dante,AC Mains,18,0,Q-SYS native integration
+Video,QSC,PTZ 20,PTZ camera with 20x zoom and USB/HDMI,USB,HDMI,Dante,AC Mains,20,0,Q-SYS native integration
+Video,Crestron,CCS-UC-1,HD conference camera with USB 3.0,USB,HDMI,AC Mains,12,0,Crestron ecosystem camera
+Video,Crestron,CCS-4K-PTZ,4K PTZ camera with 12x zoom,USB,HDMI,SDI,AC Mains,25,0,Higher-end PTZ option
+Video,LG,86UH5J-H,86 4K UHD commercial display,HDMI,RS-232,LAN,AC Mains,250,0,WebOS signage platform
+Video,LG,75UH5J-H,75 4K UHD commercial display,HDMI,RS-232,LAN,AC Mains,200,0,WebOS signage platform
+Video,LG,65UH5J-H,65 4K UHD commercial display,HDMI,RS-232,LAN,AC Mains,150,0,WebOS signage platform
+Video,Panasonic,PT-MZ780U,7000 lumen WUXGA laser projector,HDMI,SDI,HDBaseT,AC Mains,450,0,Maintenance-free laser
+Video,Panasonic,PT-MZ680U,6000 lumen WUXGA laser projector,HDMI,SDI,HDBaseT,AC Mains,400,0,Maintenance-free laser
+Video,Panasonic,PT-VMZ51U,5000 lumen WUXGA laser projector,HDMI,HDBaseT,AC Mains,350,0,Compact laser projector
+Video,Panasonic,TH-86JX1U,86 4K professional display,HDMI,RS-232,LAN,AC Mains,280,0,Premium professional display
+Infrastructure & Rack,Netgear,M4250-26G4XF-PoE+,AV-Line managed switch with AV routing,Dante,TCP/IP,PoE+,AC Mains,480,1,Gigabit with 4x SFP28; AV-optimized firmware
+Infrastructure & Rack,Netgear,M4250-10G2XF-PoE+,AV-Line 10G PoE+ switch,Dante,TCP/IP,PoE+,AC Mains,240,1,10GbE uplinks; AV-optimized firmware
+Infrastructure & Rack,Netgear,M4300-8X8F,AV-Line 10G fiber switch,Dante,TCP/IP,AC Mains,120,1,10GbE fiber backbone
+Infrastructure & Rack,Middle Atlantic,MRK-4436,44RU equipment rack with ventilation,N/A,AC Mains,0,44,23W x 36D standard rack
+Infrastructure & Rack,Middle Atlantic,MRK-2236,22RU equipment rack with ventilation,N/A,AC Mains,0,22,23W x 36D standard rack
+Infrastructure & Rack,Middle Atlantic,QUIKPULL-Q5R,Quick pull rack rails,N/A,N/A,0,0,Tool-free rack rail system
+Infrastructure & Rack,Middle Atlantic,UCT-xx,Universal cable trough,N/A,N/A,0,2,Vertical cable management
+Infrastructure & Rack,Middle Atlantic,PWR-1220-SP,12-outlet surge protection,N/A,AC Mains,0,0,Zero RU surge protection
+Infrastructure & Rack,SurgeX,SX-AX20,20A power conditioner and surge protection,AC Mains,AC Mains,0,0,Zero RU advanced surge protection
+Infrastructure & Rack,SurgeX,SX-20,20A surge protection with EMI/RFI,AC Mains,AC Mains,0,0,Zero RU surge protection
+Infrastructure & Rack,Chief,FUSION XTM1U,Micro-adjustable tilt wall mount,N/A,N/A,0,0,For 37-80 displays
+Infrastructure & Rack,Chief,WSWM70,Wide-span wall mount,N/A,N/A,0,0,For dual display installation
+Infrastructure & Rack,Chief,PTRU,Pull-through rack mount,N/A,N/A,0,2,For rack-mounted displays
+Infrastructure & Rack,Crestron,HD-DA4-4KZ-E,1-to-4 HDMI distribution amplifier,HDMI,HDMI,AC Mains,15,1,4K60 HDR capable
+Infrastructure & Rack,Crestron,HD-TX-C6G-100,HDBaseT transmitter 100m,HDMI,HDBaseT,AC Mains,10,0,HDBaseT extenders
+Infrastructure & Rack,Crestron,HD-RX-C6G-100,HDBaseT receiver 100m,HDBaseT,HDMI,AC Mains,10,0,HDBaseT extenders
+Infrastructure & Rack,Extron,IN3312 HD-DA,12-input switcher with DA,HDMI,VGA,HDMI,AC Mains,35,1,Presentation switcher
+Infrastructure & Rack,Extron,DTP2 T 212,Two-input 4K switcher/transmitter,HDMI,DisplayPort,HDBaseT,AC Mains,15,0,DTP2 extenders
+Infrastructure & Rack,Extron,DTP2 R 212,4K receiver with scaling,HDBaseT,HDMI,AC Mains,15,0,DTP2 extenders
+Processing & Control,Audinate,Dante AVIO 2x2,2-channel Dante to analog adapter,Dante,Analog XLR,PoE,5,0,Analog to Dante bridge
+Processing & Control,Audinate,Dante AVIO USB,2-channel Dante to USB adapter,Dante,USB,PoE,5,0,USB to Dante bridge
+Audio,Shure,ADX5D,Dual-channel portable receiver,RF,Dante,Analog XLR,DC Power,10,0,Axis Digital wireless system
+Audio,Shure,AD2,KSM9 handheld transmitter,RF,Battery,0.5,0,Axis Digital handheld
+Audio,Shure,AD1,Bodypack transmitter,RF,Battery,0.5,0,Axis Digital bodypack
+Video,QSC,NC-20x60,20x zoom 4K PTZ camera,HDMI,USB,Dante,AC Mains,22,0,Q-SYS native PTZ
+Video,QSC,NC-12x80,12x zoom 4K PTZ camera,HDMI,USB,Dante,AC Mains,20,0,Q-SYS native PTZ
+Infrastructure & Rack,Middle Atlantic,DVWD-xxx,Ventilated wall rack,N/A,AC Mains,0,18,Ventilated wall-mount rack
+Infrastructure & Rack,Crestron,AMP-150-150,2-channel 150W amplifier,Analog XLR,Analog Speaker,AC Mains,350,2,Crestron amplifier
+Infrastructure & Rack,QSC,CXD4.3Q,4-channel 300W amplifier with Dante,Dante,Analog Speaker,AC Mains,400,2,Q-SYS native amplifier
+Infrastructure & Rack,QSC,CXD4.5Q,4-channel 500W amplifier with Dante,Dante,Analog Speaker,AC Mains,600,2,Higher power Q-SYS amp
+Audio,QSC,AD-C6T-LP,6.5 ceiling speaker with transformer,Analog Speaker,N/A,0,0,70V/100V transformer
+Audio,QSC,AD-C8T-LP,8 ceiling speaker with transformer,Analog Speaker,N/A,0,0,70V/100V transformer
+Audio,QSC,AD-C4T-LP,4.5 ceiling speaker with transformer,Analog Speaker,N/A,0,0,70V/100V transformer for smaller spaces
