@@ -58,11 +58,17 @@ After installation, invoke the skill in your AI assistant:
 /av-design-engineering-skill Create an AV system for a 40-seat classroom with Zoom Rooms
 ```
 
+```
+/av-design-engineering-skill Design an esports arena for 20 gaming stations with spectator seating
+```
+
 ## Target Environments
 
 - College classrooms
 - Lecture halls
 - Auditoriums
+- Esports arenas and gaming facilities
+- Broadcast control rooms
 
 ## Deliverables
 
