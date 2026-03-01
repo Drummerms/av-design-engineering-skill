@@ -722,3 +722,124 @@ Esports lighting serves broadcast, player, and spectator needs:
 - Dedicated electrical service (200A+)
 - HVAC zones for gaming area and control room
 - Broadcast-quality lighting grid
+
+### Esports Rack Elevations
+
+#### Gaming Station Rack (per 10 stations)
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│ RU 44-42: Exhaust Fan Panel (3RU)                              │
+├────────────────────────────────────────────────────────────────┤
+│ RU 41:    Blank / Ventilation                                  │
+├────────────────────────────────────────────────────────────────┤
+│ RU 40-39: Netgear M4250-26G4XF-PoE+ (Gaming VLAN)              │
+├────────────────────────────────────────────────────────────────┤
+│ RU 38:    Blank / Ventilation                                  │
+├────────────────────────────────────────────────────────────────┤
+│ RU 37-36: Netgear M4250-26G4XF-PoE+ (Broadcast VLAN - NDI)     │
+├────────────────────────────────────────────────────────────────┤
+│ RU 35:    Blank / Ventilation                                  │
+├────────────────────────────────────────────────────────────────┤
+│ RU 34-33: Magewell EcoCapture Dual HDMI (NDI encoders)         │
+├────────────────────────────────────────────────────────────────┤
+│ RU 32:    Blank                                                │
+├────────────────────────────────────────────────────────────────┤
+│ RU 31:    Q-SYS Core 110f (station audio processing)           │
+├────────────────────────────────────────────────────────────────┤
+│ RU 30:    SurgeX SX-20 Power Conditioner                       │
+├────────────────────────────────────────────────────────────────┤
+│ RU 29-1:  Patch Panels, Cable Management                       │
+└────────────────────────────────────────────────────────────────┘
+
+Summary:
+- Total RU: 44
+- Used RU: 14 (equipment)
+- Available RU: 30 (cable management, growth)
+- Estimated Power: 350W
+- Serves: 10 gaming stations
+```
+
+#### Broadcast Control Rack
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│ RU 44-42: Exhaust Fan Panel (3RU)                              │
+├────────────────────────────────────────────────────────────────┤
+│ RU 41:    Blank / Ventilation                                  │
+├────────────────────────────────────────────────────────────────┤
+│ RU 40-37: Blackmagic ATEM Constellation 8K (4RU)               │
+├────────────────────────────────────────────────────────────────┤
+│ RU 36:    Blank / Ventilation                                  │
+├────────────────────────────────────────────────────────────────┤
+│ RU 35-34: Blackmagic HyperDeck Studio 4K Pro (recording)       │
+├────────────────────────────────────────────────────────────────┤
+│ RU 33:    Blank / Ventilation                                  │
+├────────────────────────────────────────────────────────────────┤
+│ RU 32-31: Behringer X32 (Broadcast Audio Mixer)                │
+├────────────────────────────────────────────────────────────────┤
+│ RU 30:    Dante AVIO 2x2 (Audio bridge)                        │
+├────────────────────────────────────────────────────────────────┤
+│ RU 29:    Blank / Ventilation                                  │
+├────────────────────────────────────────────────────────────────┤
+│ RU 28-27: Netgear M4300-8X8F (Fiber backbone)                  │
+├────────────────────────────────────────────────────────────────┤
+│ RU 26:    Blank                                                │
+├────────────────────────────────────────────────────────────────┤
+│ RU 25-24: Teradek Prism (Stream Encoder - Primary)             │
+├────────────────────────────────────────────────────────────────┤
+│ RU 23-22: Teradek Prism (Stream Encoder - Backup)              │
+├────────────────────────────────────────────────────────────────┤
+│ RU 21:    Blank / Ventilation                                  │
+├────────────────────────────────────────────────────────────────┤
+│ RU 20:    Clear-Com MS-702 (Intercom Main Station)             │
+├────────────────────────────────────────────────────────────────┤
+│ RU 19:    SurgeX SX-AX20 Power Sequencer                       │
+├────────────────────────────────────────────────────────────────┤
+│ RU 18-1:  Patch Panels, Intercom, Cable Management             │
+└────────────────────────────────────────────────────────────────┘
+
+Summary:
+- Total RU: 44
+- Used RU: 26 (equipment)
+- Available RU: 18 (cable management, growth)
+- Estimated Power: 800W
+- Dedicated 20A circuit recommended
+```
+
+#### Spectator Audio/Display Rack
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│ RU 44-42: Exhaust Fan Panel (3RU)                              │
+├────────────────────────────────────────────────────────────────┤
+│ RU 41:    Blank / Ventilation                                  │
+├────────────────────────────────────────────────────────────────┤
+│ RU 40-39: QSC CXD4.5Q Amplifier (Main PA)                      │
+├────────────────────────────────────────────────────────────────┤
+│ RU 38:    Blank / Ventilation                                  │
+├────────────────────────────────────────────────────────────────┤
+│ RU 37-36: QSC CXD4.3Q Amplifier (Subwoofers)                   │
+├────────────────────────────────────────────────────────────────┤
+│ RU 35:    Blank / Ventilation                                  │
+├────────────────────────────────────────────────────────────────┤
+│ RU 34:    Crestron HD-DA4-4KZ-E (Display Distribution)         │
+├────────────────────────────────────────────────────────────────┤
+│ RU 33:    Crestron HD-DA4-4KZ-E (Display Distribution)         │
+├────────────────────────────────────────────────────────────────┤
+│ RU 32:    Q-SYS Core 110f (Spectator DSP)                      │
+├────────────────────────────────────────────────────────────────┤
+│ RU 31:    Netgear M4250-10G2XF-PoE+ (Display VLAN)             │
+├────────────────────────────────────────────────────────────────┤
+│ RU 30:    SurgeX SX-20 Power Conditioner                       │
+├────────────────────────────────────────────────────────────────┤
+│ RU 29-1:  Patch Panels, Cable Management                       │
+└────────────────────────────────────────────────────────────────┘
+
+Summary:
+- Total RU: 44
+- Used RU: 16 (equipment)
+- Available RU: 28 (cable management, growth)
+- Estimated Power: 1200W
+- Dedicated 20A circuit required
+```
