@@ -10,7 +10,7 @@ description: >-
   Panasonic, Netgear, Middle Atlantic, Chief). Iterate on designs or start fresh
   with explicit reset. Triggers on: design AV system, create BOM, AV design for
   classroom, lecture hall AV, distance learning setup, HyFlex room, signal flow,
-  rack elevation, AV equipment list, higher education AV.
+  rack elevation, AV equipment list, higher education AV, esports facility, gaming arena, competitive gaming, shoutcaster setup, broadcast control room.
 license: MIT
 metadata:
   author: Michael Sablatura
@@ -53,6 +53,10 @@ Update the design to use QSC PTZ cameras instead
 Swap the displays for laser projectors
 New design for a 200-seat auditorium
 Reset and start fresh
+/av-design-engineering-skill Design an esports arena for 20 gaming stations
+/av-design-engineering-skill Create AV for a competitive gaming facility with spectator seating
+Design an esports broadcast control room
+Create a BOM for a varsity gaming lab
 ```
 
 Natural language triggers:
@@ -60,6 +64,8 @@ Natural language triggers:
 - "Create [BOM / AV equipment list / signal flow]"
 - "[Iterate / Update / Modify] the design to..."
 - "[New design / Start over / Reset]"
+- "Design [esports arena / gaming facility / competition studio]"
+- "Create [esports AV / gaming broadcast / shoutcaster setup]"
 
 ## Core Behaviors
 
