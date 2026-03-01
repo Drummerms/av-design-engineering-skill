@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+.AppleDouble
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
