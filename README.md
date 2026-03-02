@@ -15,31 +15,37 @@ Expert AV design engineer for Higher Education distance learning environments. G
 ### Installation
 
 **Claude Code (User-level):**
+
 ```bash
 git clone https://github.com/YOUR-USERNAME/av-design-engineering-skill.git ~/.claude/skills/av-design-engineering-skill
 ```
 
 **Claude Code (Project-level):**
+
 ```bash
 git clone https://github.com/YOUR-USERNAME/av-design-engineering-skill.git .claude/skills/av-design-engineering-skill
 ```
 
 **Cursor:**
+
 ```bash
 git clone https://github.com/YOUR-USERNAME/av-design-engineering-skill.git .cursor/rules/av-design-engineering-skill
 ```
 
 **GitHub Copilot:**
+
 ```bash
 git clone https://github.com/YOUR-USERNAME/av-design-engineering-skill.git .github/skills/av-design-engineering-skill
 ```
 
 **Windsurf:**
+
 ```bash
 git clone https://github.com/YOUR-USERNAME/av-design-engineering-skill.git .windsurf/skills/av-design-engineering-skill
 ```
 
 **Using the install script:**
+
 ```bash
 ./install.sh                    # Auto-detect platform
 ./install.sh --platform cursor  # Install for specific platform
@@ -77,6 +83,7 @@ Every design request produces four deliverables:
 ### 1. Bill of Materials (BOM)
 
 Markdown table grouped by functional categories:
+
 - Processing & Control
 - Audio
 - Video
@@ -87,6 +94,7 @@ Includes: Manufacturer, Model, Description, Qty, I/O & Compatibility Resolution
 ### 2. Statement of Work (SOW)
 
 Structured document with sections:
+
 1. Project Scope
 2. Physical Installation & Infrastructure
 3. Signal Flow Resolution & Programming
@@ -95,6 +103,7 @@ Structured document with sections:
 ### 3. Signal Flow Diagram
 
 Mermaid flowchart format showing:
+
 - Audio Signal Path
 - Video Signal Path
 - Control Signal Path
@@ -103,6 +112,7 @@ Mermaid flowchart format showing:
 ### 4. Rack Elevation
 
 Text-based rack layout showing:
+
 - RU position for each device
 - Total RU / Used / Available
 - Thermal notes
@@ -110,10 +120,10 @@ Text-based rack layout showing:
 
 ## Interaction Modes
 
-| Command | Behavior |
-|---------|----------|
-| **Initial request** | Creates new design context |
-| **Iterate request** | Modifies current design, preserves context |
+| Command                    | Behavior                                     |
+| -------------------------- | -------------------------------------------- |
+| **Initial request**        | Creates new design context                   |
+| **Iterate request**        | Modifies current design, preserves context   |
 | **"New design" / "Reset"** | Clears context, prompts for fresh parameters |
 
 ### Example Iteration
@@ -141,12 +151,14 @@ The skill validates all signal connections for:
 ## Standards Checkpoints
 
 ### CTS-D (Design)
+
 - Sight lines and viewing distance
 - Sound coverage and NC targets
 - Microphone pickup patterns
 - Cable pathway capacity
 
 ### CTS-I (Installation)
+
 - Rack thermal management
 - Grounding and bonding
 - Labeling standards
@@ -172,13 +184,13 @@ av-design-engineering-skill/
 
 ## Approved Manufacturers
 
-| Category | Manufacturers |
-|----------|---------------|
-| Processing & Control | QSC, Crestron, Extron, Biamp |
-| Audio | Shure, Sennheiser, QSC, Biamp |
-| Video | QSC, Crestron, LG, Panasonic |
-| Infrastructure | Netgear, Middle Atlantic, Chief, SurgeX |
-| Networking | Audinate/Dante, Netgear |
+| Category             | Manufacturers                           |
+| -------------------- | --------------------------------------- |
+| Processing & Control | QSC, Crestron, Extron, Biamp            |
+| Audio                | Shure, Sennheiser, QSC, Biamp           |
+| Video                | QSC, Crestron, LG, Panasonic            |
+| Infrastructure       | Netgear, Middle Atlantic, Chief, SurgeX |
+| Networking           | Audinate/Dante, Netgear                 |
 
 ## Requirements
 
@@ -195,4 +207,4 @@ Michael Sablatura
 
 ## Version
 
-1.0.0 (2026-02-28)
+1.1.0 (2026-03-01)
